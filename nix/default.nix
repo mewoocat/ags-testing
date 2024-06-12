@@ -13,6 +13,7 @@
 , wrapGAppsHook
 , upower
 , gnome
+, gnome.gnome-bluetooth_1_0
 , gtk-layer-shell
 , glib-networking
 , networkmanager
