@@ -187,7 +187,7 @@ export class Bluetooth extends Service {
     set enabled(v) { this._client.default_adapter_powered = v; }
     get enabled() { return this.state === 'on' || this.state === 'turning-on'; }
 
-    get state() { return _ADAPTER_STATE[this._client.default_adapter_state]; }
+    get state() { return _ADAPTER_STATE[this._client.default_adapter]; }
 
     get devices() { return Array.from(this._devices.values()); }
     get connected_devices() {
