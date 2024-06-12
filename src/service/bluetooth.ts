@@ -4,12 +4,14 @@ import Service from '../service.js';
 import Gio from 'gi://Gio';
 import { bulkConnect, bulkDisconnect } from '../utils.js';
 
+
+
 const _ADAPTER_STATE = {
-    [GnomeBluetooth.AdapterState.ABSENT]: 'absent',
-    [GnomeBluetooth.AdapterState.ON]: 'on',
-    [GnomeBluetooth.AdapterState.TURNING_ON]: 'turning-on',
-    [GnomeBluetooth.AdapterState.TURNING_OFF]: 'turning-off',
-    [GnomeBluetooth.AdapterState.OFF]: 'off',
+    [GnomeBluetooth.Status.INVALID]: 'invalid',
+    [GnomeBluetooth.Status.DISCONNECTED]: 'disconnected',
+    [GnomeBluetooth.Status.CONNECTED]: 'connected',
+    [GnomeBluetooth.Status.CONNECTING]: 'connecting',
+    [GnomeBluetooth.Status.PLAYING]: 'playing',
 };
 
 export class BluetoothDevice extends Service {
