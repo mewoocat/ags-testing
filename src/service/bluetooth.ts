@@ -1,5 +1,5 @@
 // @ts-expect-error missing types
-import GnomeBluetooth from 'gi://GnomeBluetooth?version=3.0';
+import GnomeBluetooth from 'gi://GnomeBluetooth?version=1.0';
 import Service from '../service.js';
 import Gio from 'gi://Gio';
 import { bulkConnect, bulkDisconnect } from '../utils.js';
